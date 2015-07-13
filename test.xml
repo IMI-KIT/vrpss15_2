@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scene name_suffix="0" base_name="prod_test" name_space="Scene">
+  <Objects>
+    <Object name_suffix="0" base_name="Root" name_space="__global__" type="Object" pickable="0" visible="1">
+      <Object name_suffix="0" base_name="Headlight" name_space="__global__" type="Light" pickable="0" visible="1" ambient="0.3 0.3 0.3 1" beacon="Headlight_beacon" diffuse="1 1 1 1" lightType="point" on="1" shadow="0" shadowColor="0.1 0.1 0.1 1" shadowType="4096" specular="0.1 0.1 0.1 1">
+        <Object name_suffix="0" base_name="Default" name_space="__global__" type="Camera" pickable="0" visible="1" from="0.00335518 -16.1278 2.50683" at="0 0 2" up="0 1 0" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="0" accept_root="1" near="0.1" far="250" aspect="1" fov="1.0472">
+          <Object name_suffix="0" base_name="Headlight_beacon" name_space="__global__" type="LightBeacon" pickable="0" visible="1" from="0 0 0" at="0 0 -1" up="0 1 0" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1" light="Headlight"/>
+        </Object>
+        <Object name_suffix="0" base_name="Teapot" name_space="__global__" type="Geometry" pickable="0" visible="1" from="0 0 0" at="0 0 -1" up="0 1 0" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1" sourcetype="3" sourceparam="Teapot 2 1"/>
+      </Object>
+    </Object>
+  </Objects>
+  <Rendering frustum_culling="1" occlusion_culling="0" two_sided="1"/>
+  <Scripts>
+    <Script name_suffix="0" base_name="test" name_space="__script__" type="Python" mobile="">
+      <core>
+	import VR
+	
+	p = VR.Factory.Production()
+	
+	p.test()
+</core>
+      <trig type="none" dev="" state="Pressed" param="" key="0" name_suffix="0" base_name="trigger" name_space="__global__"/>
+    </Script>
+    <Script name_suffix="0" base_name="udp_config" name_space="__script__" type="Python" mobile="">
+      <core>
+	import socket, VR
+
+	VR.udpsock.close()
+	VR.udpsock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM) # internet, UDP
+	VR.udpsock.setblocking(0)
+	#VR.udpsock.bind( ('localhost', 6060) )
+	VR.udpsock.bind( ('141.3.150.20', 6060) )
+</core>
+    </Script>
+    <Script name_suffix="0" base_name="udp_test" name_space="__script__" type="Python" mobile="">
+      <core>
+	import socket, VR, math
+
+	if not hasattr(VR, 'udpsock'):
+		VR.udpsock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM) # internet, UDP
+		VR.udpsock.bind( ('141.3.150.20', 6060) )
+		VR.udpsock.setblocking(0)
+		
+	def updateWindow(a):
+		a *= math.pi/180
+		ca = math.cos(a)
+		sa = math.sin(a)
+		#print a, ca, sa
+		s = VR.getSetup()
+		w = 0.5
+		p = [-ca*w,0,sa*w-1]
+		d = [sa,0,ca]
+		s.setViewPose(0,p,d,[0,1,0])
+
+	try:
+		data, addr = VR.udpsock.recvfrom(10)
+		updateWindow( float(data) )
+	except:
+		pass
+
+	
+</core>
+      <trig type="on_timeout" dev="" state="Pressed" param="50" key="0" name_suffix="1" base_name="trigger" name_space="__global__"/>
+    </Script>
+  </Scripts>
+  <Sockets/>
+  <Background color="0.6 0.6 0.6" path="" type="0"/>
+  <Navigation active="Orbit"/>
+  <Materials/>
+</Scene>
