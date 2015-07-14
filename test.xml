@@ -6,7 +6,8 @@
         <Object name_suffix="0" base_name="Default" name_space="__global__" type="Camera" pickable="0" visible="1" from="0.00335518 -16.1278 2.50683" at="0 0 2" up="0 1 0" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="0" accept_root="1" near="0.1" far="250" aspect="1" fov="1.0472">
           <Object name_suffix="0" base_name="Headlight_beacon" name_space="__global__" type="LightBeacon" pickable="0" visible="1" from="0 0 0" at="0 0 -1" up="0 1 0" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1" light="Headlight"/>
         </Object>
-        <Object name_suffix="0" base_name="Teapot" name_space="__global__" type="Geometry" pickable="0" visible="1" from="0 0 0" at="0 0 -1" up="0 1 0" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1" sourcetype="3" sourceparam="Teapot 2 1"/>
+        <Object name_suffix="0" base_name="Teapot" name_space="__global__" type="Geometry" pickable="0" visible="1" from="-5 0 0" at="-5 0 -1" up="0 1 0" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1" sourcetype="3" sourceparam="Teapot 2 1"/>
+        <Object name_suffix="0" base_name="Gear" name_space="__global__" type="Geometry" pickable="0" visible="1" from="-10 0 0" at="-10 1 -1" up="0 1 0" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1" sourcetype="3" sourceparam="Gear 0.1 0.3 0.1 32 0.05 0"/>
       </Object>
     </Object>
   </Objects>
@@ -30,7 +31,7 @@
 	VR.udpsock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM) # internet, UDP
 	VR.udpsock.setblocking(0)
 	#VR.udpsock.bind( ('localhost', 6060) )
-	VR.udpsock.bind( ('141.3.150.20', 6060) )
+	VR.udpsock.bind( ('141.3.150.233', 6060) )
 </core>
     </Script>
     <Script name_suffix="0" base_name="udp_test" name_space="__script__" type="Python" mobile="">
@@ -39,17 +40,17 @@
 
 	if not hasattr(VR, 'udpsock'):
 		VR.udpsock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM) # internet, UDP
-		VR.udpsock.bind( ('141.3.150.20', 6060) )
+		VR.udpsock.bind( ('141.3.150.233', 6060) )
 		VR.udpsock.setblocking(0)
 		
 	def updateWindow(a):
 		a *= math.pi/180
 		ca = math.cos(a)
 		sa = math.sin(a)
-		#print a, ca, sa
+		print a, ca, sa
 		s = VR.getSetup()
-		w = 0.5
-		p = [-ca*w,0,sa*w-1]
+		w = 0.2
+		p = [-ca*w,0,sa*w-0.5]
 		d = [sa,0,ca]
 		s.setViewPose(0,p,d,[0,1,0])
 
