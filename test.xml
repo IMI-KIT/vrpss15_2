@@ -2,27 +2,276 @@
 <Scene name_suffix="0" base_name="prod_test" name_space="Scene">
   <Objects>
     <Object name_suffix="0" base_name="Root" name_space="__global__" type="Object" pickable="0" visible="1">
-      <Object name_suffix="0" base_name="Headlight" name_space="__global__" type="Light" pickable="0" visible="1" ambient="0.3 0.3 0.3 1" beacon="Headlight_beacon" diffuse="1 1 1 1" lightType="point" on="1" shadow="0" shadowColor="0.1 0.1 0.1 1" shadowType="4096" specular="0.1 0.1 0.1 1">
-        <Object name_suffix="0" base_name="Default" name_space="__global__" type="Camera" pickable="0" visible="1" from="0.00335518 -16.1278 2.50683" at="0 0 2" up="0 1 0" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="0" accept_root="1" near="0.1" far="250" aspect="1" fov="1.0472">
-          <Object name_suffix="0" base_name="Headlight_beacon" name_space="__global__" type="LightBeacon" pickable="0" visible="1" from="0 0 0" at="0 0 -1" up="0 1 0" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1" light="Headlight"/>
+      <Object name_suffix="0" base_name="light" name_space="__global__" type="Light" pickable="0" visible="1" ambient="0.3 0.3 0.3 1" beacon="light_beacon" diffuse="1 1 1 1" lightType="directional" on="1" shadow="0" shadowColor="0.1 0.1 0.1 1" shadowType="4096" specular="0.1 0.1 0.1 1">
+        <Object name_suffix="0" base_name="Headlight" name_space="__global__" type="Light" pickable="0" visible="1" ambient="0.3 0.3 0.3 1" beacon="Headlight_beacon" diffuse="1 1 1 1" lightType="point" on="1" shadow="0" shadowColor="0.1 0.1 0.1 1" shadowType="4096" specular="0.1 0.1 0.1 1">
+          <Object name_suffix="0" base_name="Default" name_space="__global__" type="Camera" pickable="0" visible="1" from="0 0 0" at="0 0 -1" up="0 1 0" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1" accept_root="1" near="0.1" far="250" aspect="1" fov="1.0472">
+            <Object name_suffix="0" base_name="Headlight_beacon" name_space="__global__" type="LightBeacon" pickable="0" visible="1" from="0 0 0" at="0 0 -1" up="0 1 0" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1" light="Headlight"/>
+          </Object>
+          <Object name_suffix="0" base_name="room.dae" name_space="__global__" type="Transform" pickable="0" visible="1" from="-8.5 -9.5 -4.2" at="-8.5 -10.5 -4.2" up="0 0 1" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1">
+            <Object name_suffix="0" base_name="Scene" name_space="__global__" type="Object" pickable="0" visible="1">
+              <Object name_suffix="1026" base_name="ShapeIndexedFaceSet" name_space="__global__" type="Geometry" pickable="0" visible="1" from="0 0 0" at="0 0 -1" up="0 1 0" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1" sourcetype="2" sourceparam="scene/room.dae ShapeIndexedFaceSet.1026"/>
+              <Object name_suffix="28" base_name="ShapeIndexedFaceSet" name_space="__global__" type="Geometry" pickable="0" visible="1" from="0 0 0" at="0 0 -1" up="0 1 0" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1" sourcetype="2" sourceparam="scene/room.dae ShapeIndexedFaceSet.028"/>
+              <Object name_suffix="12" base_name="ShapeIndexedFaceSet" name_space="__global__" type="Geometry" pickable="0" visible="1" from="0 0 0" at="0 0 -1" up="0 1 0" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1" sourcetype="2" sourceparam="scene/room.dae ShapeIndexedFaceSet.012"/>
+              <Object name_suffix="22" base_name="ShapeIndexedFaceSet" name_space="__global__" type="Geometry" pickable="0" visible="1" from="0 0 0" at="0 0 -1" up="0 1 0" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1" sourcetype="2" sourceparam="scene/room.dae ShapeIndexedFaceSet.022"/>
+              <Object name_suffix="16" base_name="ShapeIndexedFaceSet" name_space="__global__" type="Geometry" pickable="0" visible="1" from="0 0 0" at="0 0 -1" up="0 1 0" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1" sourcetype="2" sourceparam="scene/room.dae ShapeIndexedFaceSet.016"/>
+              <Object name_suffix="29" base_name="ShapeIndexedFaceSet" name_space="__global__" type="Geometry" pickable="0" visible="1" from="-0.0721431 -0.0639831 -0.0019725" at="-0.0721431 -0.0639831 -1.00197" up="0 1 0" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1" sourcetype="2" sourceparam="scene/room.dae ShapeIndexedFaceSet.029"/>
+              <Object name_suffix="0" base_name="doorsBlack" name_space="__global__" type="Transform" pickable="0" visible="1" from="-5.35106 4.77972 4.01452" at="-5.35106 4.77972 3.01452" up="0 1 0" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1">
+                <Object name_suffix="0" base_name="ie_door_28" name_space="__global__" type="Transform" pickable="0" visible="1" from="-4.24649 3.67094 5.17918" at="-4.24649 3.67094 4.17918" up="-5.72205e-06 1 0" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1">
+                  <Object name_suffix="0" base_name="ie_door_280" name_space="__global__" type="Object" pickable="0" visible="1">
+                    <Object name_suffix="0" base_name="ie_door_280_0" name_space="__global__" type="Geometry" pickable="0" visible="1" from="0 0 0" at="0 0 -1" up="0 1 0" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1" sourcetype="2" sourceparam="scene/room.dae ie_door_280_0"/>
+                    <Object name_suffix="0" base_name="ie_door_280_1" name_space="__global__" type="Geometry" pickable="0" visible="1" from="0 0 0" at="0 0 -1" up="0 1 0" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1" sourcetype="2" sourceparam="scene/room.dae ie_door_280_1"/>
+                  </Object>
+                </Object>
+                <Object name_suffix="0" base_name="ie_door_29" name_space="__global__" type="Transform" pickable="0" visible="1" from="-4.24818 -4.68582 5.17918" at="-4.24818 -4.68582 4.17918" up="-1 -9.97386e-07 0" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1">
+                  <Object name_suffix="0" base_name="ie_door_290" name_space="__global__" type="Object" pickable="0" visible="1">
+                    <Object name_suffix="0" base_name="ie_door_290_0" name_space="__global__" type="Geometry" pickable="0" visible="1" from="0 0 0" at="0 0 -1" up="0 1 0" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1" sourcetype="2" sourceparam="scene/room.dae ie_door_290_0"/>
+                    <Object name_suffix="0" base_name="ie_door_290_1" name_space="__global__" type="Geometry" pickable="0" visible="1" from="0 0 0" at="0 0 -1" up="0 1 0" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1" sourcetype="2" sourceparam="scene/room.dae ie_door_290_1"/>
+                  </Object>
+                </Object>
+              </Object>
+              <Object name_suffix="0" base_name="body_000" name_space="__global__" type="Transform" pickable="0" visible="1" from="-5.50366 6.53442 8.94577" at="-5.50366 6.53442 7.94577" up="1.49012e-08 1 0" scale="0.352546 0.352546 0.352546" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1">
+                <Object name_suffix="1" base_name="uomo" name_space="__global__" type="Object" pickable="0" visible="1">
+                  <Object name_suffix="1" base_name="uomo" name_space="__global__" type="Geometry" pickable="0" visible="1" from="0 0 0" at="0 0 -1" up="0 1 0" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1" sourcetype="2" sourceparam="scene/room.dae uomo.001_0"/>
+                  <Object name_suffix="1" base_name="uomo" name_space="__global__" type="Geometry" pickable="0" visible="1" from="0 0 0" at="0 0 -1" up="0 1 0" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1" sourcetype="2" sourceparam="scene/room.dae uomo.001_1"/>
+                </Object>
+              </Object>
+              <Object name_suffix="0" base_name="switches" name_space="__global__" type="Transform" pickable="0" visible="1" from="-3.09726 4.65074 5.38878" at="-3.09726 4.65074 4.38878" up="0 1 0" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1"/>
+              <Object name_suffix="0" base_name="room_A" name_space="__global__" type="Transform" pickable="0" visible="1" from="-6.70694 4.52879 5.10673" at="-6.70694 4.52879 4.10673" up="0 1 0" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1">
+                <Object name_suffix="0" base_name="ie_npc_07" name_space="__global__" type="Transform" pickable="0" visible="1" from="1.92195 -0.848984 3.57075" at="1.92195 -0.848984 2.57075" up="0 1 0" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1">
+                  <Object name_suffix="0" base_name="body_007" name_space="__global__" type="Transform" pickable="0" visible="1" from="-0.0265255 0.0152049 -0.924209" at="-0.0265255 0.0152049 -1.92421" up="0 1 0" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1">
+                    <Object name_suffix="0" base_name="RBO" name_space="__global__" type="Transform" pickable="0" visible="1" from="0.1988 0.155945 0.772197" at="-0.800321 0.132484 0.737453" up="0.0338183 0.0387718 -0.998676" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1">
+                      <Object name_suffix="0" base_name="ie_npc_mann1_RBU" name_space="__global__" type="Transform" pickable="0" visible="1" from="-0.003263 -0.0250063 -0.408368" at="-6.177e-06 0.83088 -0.925522" up="-0.0349123 0.516939 0.85531" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1">
+                        <Object name_suffix="58" base_name="Cube" name_space="__global__" type="Object" pickable="0" visible="1">
+                          <Object name_suffix="58" base_name="Cube" name_space="__global__" type="Geometry" pickable="0" visible="1" from="0 0 0" at="0 0 -1" up="0 1 0" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1" sourcetype="2" sourceparam="scene/room.dae Cube.058_0"/>
+                          <Object name_suffix="58" base_name="Cube" name_space="__global__" type="Geometry" pickable="0" visible="1" from="0 0 0" at="0 0 -1" up="0 1 0" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1" sourcetype="2" sourceparam="scene/room.dae Cube.058_1"/>
+                        </Object>
+                      </Object>
+                      <Object name_suffix="57" base_name="Cube" name_space="__global__" type="Geometry" pickable="0" visible="1" from="0 0 0" at="0 0 -1" up="0 1 0" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1" sourcetype="2" sourceparam="scene/room.dae Cube.057"/>
+                    </Object>
+                    <Object name_suffix="56" base_name="Cube" name_space="__global__" type="Geometry" pickable="0" visible="1" from="0.247778 0.149961 1.35939" at="-0.1321 0.0567841 0.439059" up="0.923469 0.0196844 -0.383167" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1" sourcetype="2" sourceparam="scene/room.dae Cube.056"/>
+                    <Object name_suffix="0" base_name="LBO" name_space="__global__" type="Transform" pickable="0" visible="1" from="0.198801 -0.155945 0.772197" at="-0.799543 -0.175438 0.718077" up="0.0562716 -0.135736 -0.989146" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1">
+                      <Object name_suffix="0" base_name="ie_npc_mann1_LBU" name_space="__global__" type="Transform" pickable="0" visible="1" from="0.00232196 -0.0233059 -0.417347" at="-0.116376 0.831898 -0.921864" up="-0.128903 0.490537 0.861834" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1">
+                        <Object name_suffix="55" base_name="Cube" name_space="__global__" type="Object" pickable="0" visible="1">
+                          <Object name_suffix="55" base_name="Cube" name_space="__global__" type="Geometry" pickable="0" visible="1" from="0 0 0" at="0 0 -1" up="0 1 0" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1" sourcetype="2" sourceparam="scene/room.dae Cube.055_0"/>
+                          <Object name_suffix="55" base_name="Cube" name_space="__global__" type="Geometry" pickable="0" visible="1" from="0 0 0" at="0 0 -1" up="0 1 0" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1" sourcetype="2" sourceparam="scene/room.dae Cube.055_1"/>
+                        </Object>
+                      </Object>
+                      <Object name_suffix="54" base_name="Cube" name_space="__global__" type="Geometry" pickable="0" visible="1" from="0 0 0" at="0 0 -1" up="0 1 0" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1" sourcetype="2" sourceparam="scene/room.dae Cube.054"/>
+                    </Object>
+                    <Object name_suffix="0" base_name="LA" name_space="__global__" type="Transform" pickable="0" visible="1" from="0.251102 -0.129771 1.3739" at="-0.0874813 -0.061627 0.435434" up="0.940936 0.0232763 -0.337785" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1">
+                      <Object name_suffix="53" base_name="Cube" name_space="__global__" type="Geometry" pickable="0" visible="1" from="-4.76837e-07 0 4.76837e-07" at="-5.1409e-07 0 -1" up="9.31323e-09 1 -8.9407e-08" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1" sourcetype="2" sourceparam="scene/room.dae Cube.053"/>
+                      <Object name_suffix="52" base_name="Cube" name_space="__global__" type="Geometry" pickable="0" visible="1" from="0 0 0" at="0 0 -1" up="0 1 0" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1" sourcetype="2" sourceparam="scene/room.dae Cube.052"/>
+                    </Object>
+                    <Object name_suffix="0" base_name="body" name_space="__global__" type="Transform" pickable="0" visible="1" from="0.158752 -2.38419e-07 -0.046761" at="0.158752 -1.29859e-07 -1.04676" up="1 2.27632e-06 2.00508e-07" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1">
+                      <Object name_suffix="50" base_name="Cube" name_space="__global__" type="Object" pickable="0" visible="1">
+                        <Object name_suffix="50" base_name="Cube" name_space="__global__" type="Geometry" pickable="0" visible="1" from="0 0 0" at="0 0 -1" up="0 1 0" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1" sourcetype="2" sourceparam="scene/room.dae Cube.050_0"/>
+                        <Object name_suffix="50" base_name="Cube" name_space="__global__" type="Geometry" pickable="0" visible="1" from="0 0 0" at="0 0 -1" up="0 1 0" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1" sourcetype="2" sourceparam="scene/room.dae Cube.050_1"/>
+                      </Object>
+                    </Object>
+                    <Object name_suffix="49" base_name="Cube" name_space="__global__" type="Object" pickable="0" visible="1"/>
+                  </Object>
+                  <Object name_suffix="7" base_name="indicator" name_space="__global__" type="Geometry" pickable="0" visible="1" from="0 0 0" at="0 0 -1" up="0 1 0" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1" sourcetype="2" sourceparam="scene/room.dae indicator.007"/>
+                </Object>
+                <Object name_suffix="0" base_name="ie_npc_06" name_space="__global__" type="Transform" pickable="0" visible="1" from="-1.24775 -2.06486 3.15222" at="-1.24775 -2.06486 2.15222" up="-0.383175 0.923676 0" scale="1.12737 1.12737 1.12737" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1">
+                  <Object name_suffix="0" base_name="body_006" name_space="__global__" type="Transform" pickable="0" visible="1" from="-0.14175 0.0376201 1.04825" at="-0.14175 0.03762 0.048246" up="0.383174 0.923676 -6.15339e-08" scale="0.0358136 0.0358136 0.0358136" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1">
+                    <Object name_suffix="6" base_name="body" name_space="__global__" type="Object" pickable="0" visible="1">
+                      <Object name_suffix="6" base_name="body" name_space="__global__" type="Geometry" pickable="0" visible="1" from="0 0 0" at="0 0 -1" up="0 1 0" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1" sourcetype="2" sourceparam="scene/room.dae body.006_0"/>
+                      <Object name_suffix="6" base_name="body" name_space="__global__" type="Geometry" pickable="0" visible="1" from="0 0 0" at="0 0 -1" up="0 1 0" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1" sourcetype="2" sourceparam="scene/room.dae body.006_1"/>
+                    </Object>
+                  </Object>
+                  <Object name_suffix="6" base_name="indicator" name_space="__global__" type="Geometry" pickable="0" visible="1" from="0 0 0" at="0 0 -1" up="0 1 0" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1" sourcetype="2" sourceparam="scene/room.dae indicator.006"/>
+                </Object>
+                <Object name_suffix="0" base_name="ie_clock_01" name_space="__global__" type="Transform" pickable="0" visible="1" from="-4.03675 -1.25641 5.16577" at="-5.03675 -1.25641 5.16577" up="4.37114e-08 3.83864e-14 1" scale="0.106115 0.106115 0.0962335" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1">
+                  <Object name_suffix="0" base_name="Cylinder" name_space="__global__" type="Geometry" pickable="0" visible="1" from="-3.8147e-06 -1.52588e-05 0.115692" at="-3.77545e-06 -1.50231e-05 1.11569" up="0 -1 0" scale="0.0201705 0.0201705 0.0222417" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1" sourcetype="2" sourceparam="scene/room.dae Cylinder.000"/>
+                  <Object name_suffix="8" base_name="Plane" name_space="__global__" type="Geometry" pickable="0" visible="1" from="-3.8147e-06 -1.52588e-05 0.262596" at="-3.85395e-06 -1.54945e-05 -0.737404" up="0.0261769 0.999657 0" scale="0.0504719 0.32811 0.42154" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1" sourcetype="2" sourceparam="scene/room.dae Plane.008"/>
+                  <Object name_suffix="9" base_name="Plane" name_space="__global__" type="Geometry" pickable="0" visible="1" from="-3.8147e-06 -1.52588e-05 0.127525" at="-3.8988e-06 -1.55112e-05 -0.872475" up="-1.32727e-15 1 -2.03468e-08" scale="0.0510376 1.07939 0.558888" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1" sourcetype="2" sourceparam="scene/room.dae Plane.009"/>
+                  <Object name_suffix="10" base_name="Plane" name_space="__global__" type="Geometry" pickable="0" visible="1" from="-3.8147e-06 -1.52588e-05 0.14891" at="-3.79505e-06 -1.55223e-05 -0.851089" up="-0.707425 0.706789 -7.45726e-08" scale="0.0352752 1.38048 0.558888" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1" sourcetype="2" sourceparam="scene/room.dae Plane.010"/>
+                  <Object name_suffix="2" base_name="Torus" name_space="__global__" type="Geometry" pickable="0" visible="1" from="0 0 0" at="0 0 -1" up="0 1 0" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1" sourcetype="2" sourceparam="scene/room.dae Torus.002"/>
+                </Object>
+                <Object name_suffix="0" base_name="ie_airCon_02" name_space="__global__" type="Transform" pickable="0" visible="1" from="2.64665 -1.5391 4.9888" at="2.64665 -1.5391 3.9888" up="0 1 0" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1">
+                  <Object name_suffix="0" base_name="airCon_door_020" name_space="__global__" type="Geometry" pickable="0" visible="1" from="-0.0120506 0.0846429 -0.0643921" at="-0.0120506 0.0846429 -1.06439" up="-1 -1.2358e-06 0" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1" sourcetype="2" sourceparam="scene/room.dae airCon_door_020"/>
+                  <Object name_suffix="0" base_name="airCon_cover_02" name_space="__global__" type="Transform" pickable="0" visible="1" from="0 9.53674e-07 -1.90735e-06" at="0 9.53674e-07 -1" up="-1 -1.11659e-06 0" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1">
+                    <Object name_suffix="0" base_name="airCon_cover_020" name_space="__global__" type="Object" pickable="0" visible="1">
+                      <Object name_suffix="0" base_name="airCon_cover_020_0" name_space="__global__" type="Geometry" pickable="0" visible="1" from="0 0 0" at="0 0 -1" up="0 1 0" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1" sourcetype="2" sourceparam="scene/room.dae airCon_cover_020_0"/>
+                      <Object name_suffix="0" base_name="airCon_cover_020_1" name_space="__global__" type="Geometry" pickable="0" visible="1" from="0 0 0" at="0 0 -1" up="0 1 0" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1" sourcetype="2" sourceparam="scene/room.dae airCon_cover_020_1"/>
+                      <Object name_suffix="0" base_name="airCon_cover_020_2" name_space="__global__" type="Geometry" pickable="0" visible="1" from="0 0 0" at="0 0 -1" up="0 1 0" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1" sourcetype="2" sourceparam="scene/room.dae airCon_cover_020_2"/>
+                      <Object name_suffix="0" base_name="airCon_cover_020_3" name_space="__global__" type="Geometry" pickable="0" visible="1" from="0 0 0" at="0 0 -1" up="0 1 0" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1" sourcetype="2" sourceparam="scene/room.dae airCon_cover_020_3"/>
+                      <Object name_suffix="0" base_name="airCon_cover_020_4" name_space="__global__" type="Geometry" pickable="0" visible="1" from="0 0 0" at="0 0 -1" up="0 1 0" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1" sourcetype="2" sourceparam="scene/room.dae airCon_cover_020_4"/>
+                      <Object name_suffix="0" base_name="airCon_cover_020_5" name_space="__global__" type="Geometry" pickable="0" visible="1" from="0 0 0" at="0 0 -1" up="0 1 0" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1" sourcetype="2" sourceparam="scene/room.dae airCon_cover_020_5"/>
+                      <Object name_suffix="0" base_name="airCon_cover_020_6" name_space="__global__" type="Geometry" pickable="0" visible="1" from="0 0 0" at="0 0 -1" up="0 1 0" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1" sourcetype="2" sourceparam="scene/room.dae airCon_cover_020_6"/>
+                    </Object>
+                  </Object>
+                  <Object name_suffix="0" base_name="ie_airCon_020" name_space="__global__" type="Geometry" pickable="0" visible="1" from="0 0 0" at="0 0 -1" up="0 1 0" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1" sourcetype="2" sourceparam="scene/room.dae ie_airCon_020"/>
+                </Object>
+                <Object name_suffix="0" base_name="cupboard_05" name_space="__global__" type="Transform" pickable="0" visible="1" from="-1.70033 -0.465742 3.67545" at="-1.70033 -0.465742 2.67545" up="-1 7.5498e-08 0" scale="0.431108 0.223737 0.681079" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1">
+                  <Object name_suffix="0" base_name="cupboard_050" name_space="__global__" type="Object" pickable="0" visible="1">
+                    <Object name_suffix="0" base_name="cupboard_050_0" name_space="__global__" type="Geometry" pickable="0" visible="1" from="0 0 0" at="0 0 -1" up="0 1 0" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1" sourcetype="2" sourceparam="scene/room.dae cupboard_050_0"/>
+                    <Object name_suffix="0" base_name="cupboard_050_1" name_space="__global__" type="Geometry" pickable="0" visible="1" from="0 0 0" at="0 0 -1" up="0 1 0" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1" sourcetype="2" sourceparam="scene/room.dae cupboard_050_1"/>
+                    <Object name_suffix="0" base_name="cupboard_050_2" name_space="__global__" type="Geometry" pickable="0" visible="1" from="0 0 0" at="0 0 -1" up="0 1 0" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1" sourcetype="2" sourceparam="scene/room.dae cupboard_050_2"/>
+                    <Object name_suffix="0" base_name="cupboard_050_3" name_space="__global__" type="Geometry" pickable="0" visible="1" from="0 0 0" at="0 0 -1" up="0 1 0" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1" sourcetype="2" sourceparam="scene/room.dae cupboard_050_3"/>
+                    <Object name_suffix="0" base_name="cupboard_050_4" name_space="__global__" type="Geometry" pickable="0" visible="1" from="0 0 0" at="0 0 -1" up="0 1 0" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1" sourcetype="2" sourceparam="scene/room.dae cupboard_050_4"/>
+                  </Object>
+                </Object>
+                <Object name_suffix="0" base_name="ie_light_020_switch" name_space="__global__" type="Transform" pickable="0" visible="1" from="6.70694 -4.52879 -5.10673" at="6.70694 -4.52879 -6.10673" up="0 1 0" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1">
+                  <Object name_suffix="0" base_name="ie_light_020" name_space="__global__" type="Geometry" pickable="0" visible="1" from="-8.33399 4.25402 11.0052" at="-8.33399 4.25402 10.0052" up="2.64851e-08 1 8.93292e-08" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1" sourcetype="2" sourceparam="scene/room.dae ie_light_020"/>
+                  <Object name_suffix="0" base_name="ie_light_020_switch0" name_space="__global__" type="Object" pickable="0" visible="1">
+                    <Object name_suffix="0" base_name="ie_light_020_switch0_0" name_space="__global__" type="Geometry" pickable="0" visible="1" from="0 0 0" at="0 0 -1" up="0 1 0" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1" sourcetype="2" sourceparam="scene/room.dae ie_light_020_switch0_0"/>
+                    <Object name_suffix="0" base_name="ie_light_020_switch0_1" name_space="__global__" type="Geometry" pickable="0" visible="1" from="0 0 0" at="0 0 -1" up="0 1 0" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1" sourcetype="2" sourceparam="scene/room.dae ie_light_020_switch0_1"/>
+                  </Object>
+                </Object>
+                <Object name_suffix="0" base_name="ie_heater_04" name_space="__global__" type="Transform" pickable="0" visible="1" from="-3.90157 2.22072 3.10074" at="-3.90157 2.22072 2.10074" up="0 1 0" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1">
+                  <Object name_suffix="4" base_name="handle" name_space="__global__" type="Geometry" pickable="0" visible="1" from="-0.0531216 0.147471 0.625059" at="-0.0531216 0.147471 -0.374941" up="0 1 0" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1" sourcetype="2" sourceparam="scene/room.dae handle.004"/>
+                  <Object name_suffix="0" base_name="heater_04" name_space="__global__" type="Geometry" pickable="0" visible="1" from="0 0 0" at="0 0 -1" up="0 1 0" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1" sourcetype="2" sourceparam="scene/room.dae heater_04"/>
+                </Object>
+                <Object name_suffix="0" base_name="folder_03" name_space="__global__" type="Transform" pickable="0" visible="1" from="-0.0866542 -3.96321 3.17015" at="-0.0866542 -3.96321 2.17015" up="0 1 0" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1">
+                  <Object name_suffix="0" base_name="folder_030" name_space="__global__" type="Object" pickable="0" visible="1">
+                    <Object name_suffix="0" base_name="folder_030_0" name_space="__global__" type="Geometry" pickable="0" visible="1" from="0 0 0" at="0 0 -1" up="0 1 0" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1" sourcetype="2" sourceparam="scene/room.dae folder_030_0"/>
+                    <Object name_suffix="0" base_name="folder_030_1" name_space="__global__" type="Geometry" pickable="0" visible="1" from="0 0 0" at="0 0 -1" up="0 1 0" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1" sourcetype="2" sourceparam="scene/room.dae folder_030_1"/>
+                    <Object name_suffix="0" base_name="folder_030_2" name_space="__global__" type="Geometry" pickable="0" visible="1" from="0 0 0" at="0 0 -1" up="0 1 0" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1" sourcetype="2" sourceparam="scene/room.dae folder_030_2"/>
+                    <Object name_suffix="0" base_name="folder_030_3" name_space="__global__" type="Geometry" pickable="0" visible="1" from="0 0 0" at="0 0 -1" up="0 1 0" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1" sourcetype="2" sourceparam="scene/room.dae folder_030_3"/>
+                  </Object>
+                </Object>
+                <Object name_suffix="0" base_name="folder_02" name_space="__global__" type="Transform" pickable="0" visible="1" from="-0.371361 -3.96321 3.12743" at="-0.371361 -3.96321 2.12743" up="0 1 0" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1">
+                  <Object name_suffix="0" base_name="folder_020" name_space="__global__" type="Object" pickable="0" visible="1">
+                    <Object name_suffix="0" base_name="folder_020_0" name_space="__global__" type="Geometry" pickable="0" visible="1" from="0 0 0" at="0 0 -1" up="0 1 0" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1" sourcetype="2" sourceparam="scene/room.dae folder_020_0"/>
+                    <Object name_suffix="0" base_name="folder_020_1" name_space="__global__" type="Geometry" pickable="0" visible="1" from="0 0 0" at="0 0 -1" up="0 1 0" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1" sourcetype="2" sourceparam="scene/room.dae folder_020_1"/>
+                    <Object name_suffix="0" base_name="folder_020_2" name_space="__global__" type="Geometry" pickable="0" visible="1" from="0 0 0" at="0 0 -1" up="0 1 0" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1" sourcetype="2" sourceparam="scene/room.dae folder_020_2"/>
+                    <Object name_suffix="0" base_name="folder_020_3" name_space="__global__" type="Geometry" pickable="0" visible="1" from="0 0 0" at="0 0 -1" up="0 1 0" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1" sourcetype="2" sourceparam="scene/room.dae folder_020_3"/>
+                  </Object>
+                </Object>
+                <Object name_suffix="0" base_name="ie_motionSensor_010" name_space="__global__" type="Geometry" pickable="0" visible="1" from="-2.42136 -4.3619 5.23693" at="-2.42136 -4.3619 4.23693" up="0 1 0" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1" sourcetype="2" sourceparam="scene/room.dae ie_motionSensor_010"/>
+                <Object name_suffix="0" base_name="head" name_space="__global__" type="Transform" pickable="0" visible="1" from="0.964635 3.21172 3.7366" at="0.964635 3.21172 2.7366" up="0 1 0" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1">
+                  <Object name_suffix="0" base_name="head0" name_space="__global__" type="Object" pickable="0" visible="1">
+                    <Object name_suffix="0" base_name="head0_0" name_space="__global__" type="Geometry" pickable="0" visible="1" from="0 0 0" at="0 0 -1" up="0 1 0" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1" sourcetype="2" sourceparam="scene/room.dae head0_0"/>
+                    <Object name_suffix="0" base_name="head0_1" name_space="__global__" type="Geometry" pickable="0" visible="1" from="0 0 0" at="0 0 -1" up="0 1 0" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1" sourcetype="2" sourceparam="scene/room.dae head0_1"/>
+                  </Object>
+                </Object>
+                <Object name_suffix="0" base_name="cactus" name_space="__global__" type="Transform" pickable="0" visible="1" from="-2.39253 -0.19646 4.16881" at="-2.39253 -0.19646 3.16881" up="-1 -8.78177e-07 0" scale="0.420679 0.420679 0.420679" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1">
+                  <Object name_suffix="0" base_name="cactus0" name_space="__global__" type="Object" pickable="0" visible="1">
+                    <Object name_suffix="0" base_name="cactus0_0" name_space="__global__" type="Geometry" pickable="0" visible="1" from="0 0 0" at="0 0 -1" up="0 1 0" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1" sourcetype="2" sourceparam="scene/room.dae cactus0_0"/>
+                    <Object name_suffix="0" base_name="cactus0_1" name_space="__global__" type="Geometry" pickable="0" visible="1" from="0 0 0" at="0 0 -1" up="0 1 0" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1" sourcetype="2" sourceparam="scene/room.dae cactus0_1"/>
+                    <Object name_suffix="0" base_name="cactus0_2" name_space="__global__" type="Geometry" pickable="0" visible="1" from="0 0 0" at="0 0 -1" up="0 1 0" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1" sourcetype="2" sourceparam="scene/room.dae cactus0_2"/>
+                  </Object>
+                </Object>
+                <Object name_suffix="0" base_name="ie_fan_02" name_space="__global__" type="Transform" pickable="0" visible="1" from="-1.62035 -0.536446 3.8701" at="-1.62035 -0.536446 2.8701" up="0.138584 0.990351 0" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1">
+                  <Object name_suffix="0" base_name="ie_fan_02_impeller0" name_space="__global__" type="Geometry" pickable="0" visible="1" from="0.0783291 -0.00169349 0.219067" at="0.0783291 -0.00169349 -0.780933" up="-7.45058e-08 1 5.16563e-08" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1" sourcetype="2" sourceparam="scene/room.dae ie_fan_02_impeller0"/>
+                  <Object name_suffix="0" base_name="ie_fan_020" name_space="__global__" type="Object" pickable="0" visible="1">
+                    <Object name_suffix="0" base_name="ie_fan_020_0" name_space="__global__" type="Geometry" pickable="0" visible="1" from="0 0 0" at="0 0 -1" up="0 1 0" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1" sourcetype="2" sourceparam="scene/room.dae ie_fan_020_0"/>
+                    <Object name_suffix="0" base_name="ie_fan_020_1" name_space="__global__" type="Geometry" pickable="0" visible="1" from="0 0 0" at="0 0 -1" up="0 1 0" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1" sourcetype="2" sourceparam="scene/room.dae ie_fan_020_1"/>
+                  </Object>
+                </Object>
+                <Object name_suffix="0" base_name="chair" name_space="__global__" type="Transform" pickable="0" visible="1" from="-2.67691 0.591271 3.4907" at="-2.67691 0.591271 2.4907" up="1 1.19249e-08 0" scale="0.35104 0.35104 0.0223722" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1">
+                  <Object name_suffix="0" base_name="chair0" name_space="__global__" type="Object" pickable="0" visible="1">
+                    <Object name_suffix="0" base_name="chair0_0" name_space="__global__" type="Geometry" pickable="0" visible="1" from="0 0 0" at="0 0 -1" up="0 1 0" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1" sourcetype="2" sourceparam="scene/room.dae chair0_0"/>
+                    <Object name_suffix="0" base_name="chair0_1" name_space="__global__" type="Geometry" pickable="0" visible="1" from="0 0 0" at="0 0 -1" up="0 1 0" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1" sourcetype="2" sourceparam="scene/room.dae chair0_1"/>
+                    <Object name_suffix="0" base_name="chair0_2" name_space="__global__" type="Geometry" pickable="0" visible="1" from="0 0 0" at="0 0 -1" up="0 1 0" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1" sourcetype="2" sourceparam="scene/room.dae chair0_2"/>
+                  </Object>
+                </Object>
+                <Object name_suffix="0" base_name="officeChair_03" name_space="__global__" type="Transform" pickable="0" visible="1" from="-3.06229 -1.042 3.06574" at="-3.06229 -1.042 2.06574" up="0.152099 0.988365 0" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1">
+                  <Object name_suffix="0" base_name="officeChair_030" name_space="__global__" type="Object" pickable="0" visible="1">
+                    <Object name_suffix="0" base_name="officeChair_030_0" name_space="__global__" type="Geometry" pickable="0" visible="1" from="0 0 0" at="0 0 -1" up="0 1 0" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1" sourcetype="2" sourceparam="scene/room.dae officeChair_030_0"/>
+                    <Object name_suffix="0" base_name="officeChair_030_1" name_space="__global__" type="Geometry" pickable="0" visible="1" from="0 0 0" at="0 0 -1" up="0 1 0" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1" sourcetype="2" sourceparam="scene/room.dae officeChair_030_1"/>
+                    <Object name_suffix="0" base_name="officeChair_030_2" name_space="__global__" type="Geometry" pickable="0" visible="1" from="0 0 0" at="0 0 -1" up="0 1 0" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1" sourcetype="2" sourceparam="scene/room.dae officeChair_030_2"/>
+                    <Object name_suffix="0" base_name="officeChair_030_3" name_space="__global__" type="Geometry" pickable="0" visible="1" from="0 0 0" at="0 0 -1" up="0 1 0" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1" sourcetype="2" sourceparam="scene/room.dae officeChair_030_3"/>
+                  </Object>
+                </Object>
+                <Object name_suffix="0" base_name="vase0" name_space="__global__" type="Geometry" pickable="0" visible="1" from="2.31012 0.558465 4.0158" at="2.31012 0.558465 3.0158" up="0 1 0" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1" sourcetype="2" sourceparam="scene/room.dae vase0"/>
+                <Object name_suffix="0" base_name="table" name_space="__global__" type="Transform" pickable="0" visible="1" from="-3.85564 -0.0224004 3.49015" at="-3.85564 -0.0224004 2.49015" up="0 1 0" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1">
+                  <Object name_suffix="0" base_name="table0" name_space="__global__" type="Object" pickable="0" visible="1">
+                    <Object name_suffix="0" base_name="table0_0" name_space="__global__" type="Geometry" pickable="0" visible="1" from="0 0 0" at="0 0 -1" up="0 1 0" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1" sourcetype="2" sourceparam="scene/room.dae table0_0"/>
+                    <Object name_suffix="0" base_name="table0_1" name_space="__global__" type="Geometry" pickable="0" visible="1" from="0 0 0" at="0 0 -1" up="0 1 0" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1" sourcetype="2" sourceparam="scene/room.dae table0_1"/>
+                  </Object>
+                </Object>
+                <Object name_suffix="0" base_name="plant_01" name_space="__global__" type="Transform" pickable="0" visible="1" from="-0.657971 2.5659 3.22795" at="-0.657971 2.5659 2.22795" up="0 1 0" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1">
+                  <Object name_suffix="0" base_name="plant_010" name_space="__global__" type="Object" pickable="0" visible="1">
+                    <Object name_suffix="0" base_name="plant_010_0" name_space="__global__" type="Geometry" pickable="0" visible="1" from="0 0 0" at="0 0 -1" up="0 1 0" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1" sourcetype="2" sourceparam="scene/room.dae plant_010_0"/>
+                    <Object name_suffix="0" base_name="plant_010_1" name_space="__global__" type="Geometry" pickable="0" visible="1" from="0 0 0" at="0 0 -1" up="0 1 0" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1" sourcetype="2" sourceparam="scene/room.dae plant_010_1"/>
+                    <Object name_suffix="0" base_name="plant_010_2" name_space="__global__" type="Geometry" pickable="0" visible="1" from="0 0 0" at="0 0 -1" up="0 1 0" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1" sourcetype="2" sourceparam="scene/room.dae plant_010_2"/>
+                    <Object name_suffix="0" base_name="plant_010_3" name_space="__global__" type="Geometry" pickable="0" visible="1" from="0 0 0" at="0 0 -1" up="0 1 0" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1" sourcetype="2" sourceparam="scene/room.dae plant_010_3"/>
+                    <Object name_suffix="0" base_name="plant_010_4" name_space="__global__" type="Geometry" pickable="0" visible="1" from="0 0 0" at="0 0 -1" up="0 1 0" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1" sourcetype="2" sourceparam="scene/room.dae plant_010_4"/>
+                    <Object name_suffix="0" base_name="plant_010_5" name_space="__global__" type="Geometry" pickable="0" visible="1" from="0 0 0" at="0 0 -1" up="0 1 0" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1" sourcetype="2" sourceparam="scene/room.dae plant_010_5"/>
+                  </Object>
+                </Object>
+                <Object name_suffix="0" base_name="atom" name_space="__global__" type="Transform" pickable="0" visible="1" from="-2.11308 -0.708263 4.17307" at="-2.92467 -0.792906 3.59501" up="-0.479277 0.662262 0.575935" scale="0.239234 0.239234 0.239234" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1">
+                  <Object name_suffix="0" base_name="atom0" name_space="__global__" type="Object" pickable="0" visible="1">
+                    <Object name_suffix="0" base_name="atom0_0" name_space="__global__" type="Geometry" pickable="0" visible="1" from="0 0 0" at="0 0 -1" up="0 1 0" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1" sourcetype="2" sourceparam="scene/room.dae atom0_0"/>
+                    <Object name_suffix="0" base_name="atom0_1" name_space="__global__" type="Geometry" pickable="0" visible="1" from="0 0 0" at="0 0 -1" up="0 1 0" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1" sourcetype="2" sourceparam="scene/room.dae atom0_1"/>
+                    <Object name_suffix="0" base_name="atom0_2" name_space="__global__" type="Geometry" pickable="0" visible="1" from="0 0 0" at="0 0 -1" up="0 1 0" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1" sourcetype="2" sourceparam="scene/room.dae atom0_2"/>
+                  </Object>
+                </Object>
+                <Object name_suffix="0" base_name="cupboard_04" name_space="__global__" type="Transform" pickable="0" visible="1" from="0.972986 -4.20178 4.59328" at="0.972986 -4.20178 3.59328" up="0 1 0" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1">
+                  <Object name_suffix="0" base_name="cupboard_040" name_space="__global__" type="Object" pickable="0" visible="1">
+                    <Object name_suffix="0" base_name="cupboard_040_0" name_space="__global__" type="Geometry" pickable="0" visible="1" from="0 0 0" at="0 0 -1" up="0 1 0" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1" sourcetype="2" sourceparam="scene/room.dae cupboard_040_0"/>
+                    <Object name_suffix="0" base_name="cupboard_040_1" name_space="__global__" type="Geometry" pickable="0" visible="1" from="0 0 0" at="0 0 -1" up="0 1 0" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1" sourcetype="2" sourceparam="scene/room.dae cupboard_040_1"/>
+                    <Object name_suffix="0" base_name="cupboard_040_2" name_space="__global__" type="Geometry" pickable="0" visible="1" from="0 0 0" at="0 0 -1" up="0 1 0" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1" sourcetype="2" sourceparam="scene/room.dae cupboard_040_2"/>
+                  </Object>
+                </Object>
+                <Object name_suffix="0" base_name="ie_couch_020" name_space="__global__" type="Geometry" pickable="0" visible="1" from="-9.05539 9.35235 2.93637" at="-10.0554 9.35235 2.93637" up="1.62921e-07 1.43073e-13 1" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1" sourcetype="2" sourceparam="scene/room.dae ie_couch_020"/>
+                <Object name_suffix="0" base_name="cupboard_03" name_space="__global__" type="Transform" pickable="0" visible="1" from="2.5221 2.67118 4.34535" at="2.5221 2.67118 3.34535" up="0 1 0" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1">
+                  <Object name_suffix="0" base_name="cupboard_030" name_space="__global__" type="Object" pickable="0" visible="1">
+                    <Object name_suffix="0" base_name="cupboard_030_0" name_space="__global__" type="Geometry" pickable="0" visible="1" from="0 0 0" at="0 0 -1" up="0 1 0" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1" sourcetype="2" sourceparam="scene/room.dae cupboard_030_0"/>
+                    <Object name_suffix="0" base_name="cupboard_030_1" name_space="__global__" type="Geometry" pickable="0" visible="1" from="0 0 0" at="0 0 -1" up="0 1 0" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1" sourcetype="2" sourceparam="scene/room.dae cupboard_030_1"/>
+                    <Object name_suffix="0" base_name="cupboard_030_2" name_space="__global__" type="Geometry" pickable="0" visible="1" from="0 0 0" at="0 0 -1" up="0 1 0" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1" sourcetype="2" sourceparam="scene/room.dae cupboard_030_2"/>
+                    <Object name_suffix="0" base_name="cupboard_030_3" name_space="__global__" type="Geometry" pickable="0" visible="1" from="0 0 0" at="0 0 -1" up="0 1 0" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1" sourcetype="2" sourceparam="scene/room.dae cupboard_030_3"/>
+                  </Object>
+                </Object>
+                <Object name_suffix="0" base_name="glassTable" name_space="__global__" type="Transform" pickable="0" visible="1" from="2.22744 0.557469 3.56388" at="2.22744 0.557469 2.56388" up="0 1 0" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1">
+                  <Object name_suffix="0" base_name="glassTable0" name_space="__global__" type="Object" pickable="0" visible="1">
+                    <Object name_suffix="0" base_name="glassTable0_0" name_space="__global__" type="Geometry" pickable="0" visible="1" from="0 0 0" at="0 0 -1" up="0 1 0" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1" sourcetype="2" sourceparam="scene/room.dae glassTable0_0"/>
+                    <Object name_suffix="0" base_name="glassTable0_1" name_space="__global__" type="Geometry" pickable="0" visible="1" from="0 0 0" at="0 0 -1" up="0 1 0" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1" sourcetype="2" sourceparam="scene/room.dae glassTable0_1"/>
+                  </Object>
+                </Object>
+                <Object name_suffix="0" base_name="cup_030" name_space="__global__" type="Geometry" pickable="0" visible="1" from="0.530783 -3.9631 3.97645" at="0.530783 -3.9631 2.97645" up="0 1 0" scale="0.127084 0.124738 0.112285" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1" sourcetype="2" sourceparam="scene/room.dae cup_030"/>
+                <Object name_suffix="0" base_name="HARDWARE_001" name_space="__global__" type="Transform" pickable="0" visible="1" from="-3.26843 -0.438588 -0.945252" at="-3.26843 -0.438588 -1.94525" up="0 1 0" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1">
+                  <Object name_suffix="0" base_name="mousepad_03" name_space="__global__" type="Transform" pickable="0" visible="1" from="0.40226 -0.416462 4.97763" at="0.40226 -0.416461 3.97763" up="0 1 2.38418e-07" scale="0.101962 0.101962 0.101962" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1">
+                    <Object name_suffix="0" base_name="mousepad_030" name_space="__global__" type="Object" pickable="0" visible="1">
+                      <Object name_suffix="0" base_name="mousepad_030_0" name_space="__global__" type="Geometry" pickable="0" visible="1" from="0 0 0" at="0 0 -1" up="0 1 0" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1" sourcetype="2" sourceparam="scene/room.dae mousepad_030_0"/>
+                      <Object name_suffix="0" base_name="mousepad_030_1" name_space="__global__" type="Geometry" pickable="0" visible="1" from="0 0 0" at="0 0 -1" up="0 1 0" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1" sourcetype="2" sourceparam="scene/room.dae mousepad_030_1"/>
+                    </Object>
+                  </Object>
+                  <Object name_suffix="0" base_name="ie_pc_03" name_space="__global__" type="Transform" pickable="0" visible="1" from="5.1472 -11.9481 3.6799" at="5.1472 -11.9481 2.6799" up="0 1 0" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1">
+                    <Object name_suffix="0" base_name="ie_pc_03_monitor0" name_space="__global__" type="Geometry" pickable="0" visible="1" from="4.44326 3.6466 0.0110421" at="4.44326 3.6466 -0.988958" up="0 1 0" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1" sourcetype="2" sourceparam="scene/room.dae ie_pc_03_monitor0"/>
+                    <Object name_suffix="0" base_name="ie_pc_030" name_space="__global__" type="Object" pickable="0" visible="1">
+                      <Object name_suffix="0" base_name="ie_pc_030_0" name_space="__global__" type="Geometry" pickable="0" visible="1" from="0 0 0" at="0 0 -1" up="0 1 0" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1" sourcetype="2" sourceparam="scene/room.dae ie_pc_030_0"/>
+                      <Object name_suffix="0" base_name="ie_pc_030_1" name_space="__global__" type="Geometry" pickable="0" visible="1" from="0 0 0" at="0 0 -1" up="0 1 0" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1" sourcetype="2" sourceparam="scene/room.dae ie_pc_030_1"/>
+                      <Object name_suffix="0" base_name="ie_pc_030_2" name_space="__global__" type="Geometry" pickable="0" visible="1" from="0 0 0" at="0 0 -1" up="0 1 0" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1" sourcetype="2" sourceparam="scene/room.dae ie_pc_030_2"/>
+                      <Object name_suffix="0" base_name="ie_pc_030_3" name_space="__global__" type="Geometry" pickable="0" visible="1" from="0 0 0" at="0 0 -1" up="0 1 0" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1" sourcetype="2" sourceparam="scene/room.dae ie_pc_030_3"/>
+                      <Object name_suffix="0" base_name="ie_pc_030_4" name_space="__global__" type="Geometry" pickable="0" visible="1" from="0 0 0" at="0 0 -1" up="0 1 0" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1" sourcetype="2" sourceparam="scene/room.dae ie_pc_030_4"/>
+                      <Object name_suffix="0" base_name="ie_pc_030_5" name_space="__global__" type="Geometry" pickable="0" visible="1" from="0 0 0" at="0 0 -1" up="0 1 0" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1" sourcetype="2" sourceparam="scene/room.dae ie_pc_030_5"/>
+                      <Object name_suffix="0" base_name="ie_pc_030_6" name_space="__global__" type="Geometry" pickable="0" visible="1" from="0 0 0" at="0 0 -1" up="0 1 0" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1" sourcetype="2" sourceparam="scene/room.dae ie_pc_030_6"/>
+                      <Object name_suffix="0" base_name="ie_pc_030_7" name_space="__global__" type="Geometry" pickable="0" visible="1" from="0 0 0" at="0 0 -1" up="0 1 0" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1" sourcetype="2" sourceparam="scene/room.dae ie_pc_030_7"/>
+                      <Object name_suffix="0" base_name="ie_pc_030_8" name_space="__global__" type="Geometry" pickable="0" visible="1" from="0 0 0" at="0 0 -1" up="0 1 0" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1" sourcetype="2" sourceparam="scene/room.dae ie_pc_030_8"/>
+                    </Object>
+                  </Object>
+                </Object>
+                <Object name_suffix="0" base_name="books_03" name_space="__global__" type="Transform" pickable="0" visible="1" from="-0.822628 -4.02306 4.33181" at="-0.822628 -4.02306 3.33181" up="0 1 0" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1">
+                  <Object name_suffix="0" base_name="books_030" name_space="__global__" type="Object" pickable="0" visible="1">
+                    <Object name_suffix="0" base_name="books_030_0" name_space="__global__" type="Geometry" pickable="0" visible="1" from="0 0 0" at="0 0 -1" up="0 1 0" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1" sourcetype="2" sourceparam="scene/room.dae books_030_0"/>
+                    <Object name_suffix="0" base_name="books_030_1" name_space="__global__" type="Geometry" pickable="0" visible="1" from="0 0 0" at="0 0 -1" up="0 1 0" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1" sourcetype="2" sourceparam="scene/room.dae books_030_1"/>
+                    <Object name_suffix="0" base_name="books_030_2" name_space="__global__" type="Geometry" pickable="0" visible="1" from="0 0 0" at="0 0 -1" up="0 1 0" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1" sourcetype="2" sourceparam="scene/room.dae books_030_2"/>
+                    <Object name_suffix="0" base_name="books_030_3" name_space="__global__" type="Geometry" pickable="0" visible="1" from="0 0 0" at="0 0 -1" up="0 1 0" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1" sourcetype="2" sourceparam="scene/room.dae books_030_3"/>
+                  </Object>
+                </Object>
+                <Object name_suffix="0" base_name="books_04" name_space="__global__" type="Transform" pickable="0" visible="1" from="2.13857 2.73099 4.873" at="2.13857 2.73099 3.873" up="-1 7.54979e-08 0" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1">
+                  <Object name_suffix="0" base_name="books_040" name_space="__global__" type="Object" pickable="0" visible="1">
+                    <Object name_suffix="0" base_name="books_040_0" name_space="__global__" type="Geometry" pickable="0" visible="1" from="0 0 0" at="0 0 -1" up="0 1 0" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1" sourcetype="2" sourceparam="scene/room.dae books_040_0"/>
+                    <Object name_suffix="0" base_name="books_040_1" name_space="__global__" type="Geometry" pickable="0" visible="1" from="0 0 0" at="0 0 -1" up="0 1 0" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1" sourcetype="2" sourceparam="scene/room.dae books_040_1"/>
+                    <Object name_suffix="0" base_name="books_040_2" name_space="__global__" type="Geometry" pickable="0" visible="1" from="0 0 0" at="0 0 -1" up="0 1 0" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1" sourcetype="2" sourceparam="scene/room.dae books_040_2"/>
+                    <Object name_suffix="0" base_name="books_040_3" name_space="__global__" type="Geometry" pickable="0" visible="1" from="0 0 0" at="0 0 -1" up="0 1 0" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1" sourcetype="2" sourceparam="scene/room.dae books_040_3"/>
+                  </Object>
+                </Object>
+                <Object name_suffix="0" base_name="ie_motionSensor_020" name_space="__global__" type="Geometry" pickable="0" visible="1" from="-2.42136 3.88728 5.23693" at="-2.42136 3.88728 4.23693" up="0 1 0" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1" sourcetype="2" sourceparam="scene/room.dae ie_motionSensor_020"/>
+                <Object name_suffix="0" base_name="officeBin_010" name_space="__global__" type="Geometry" pickable="0" visible="1" from="-1.62035 -0.536446 3.8701" at="-1.62035 -0.536446 2.8701" up="0.138584 0.990351 0" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1" sourcetype="2" sourceparam="scene/room.dae officeBin_010"/>
+              </Object>
+            </Object>
+          </Object>
         </Object>
-        <Object name_suffix="0" base_name="Teapot" name_space="__global__" type="Geometry" pickable="0" visible="1" from="-5 0 0" at="-5 0 -1" up="0 1 0" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1" sourcetype="3" sourceparam="Teapot 2 1"/>
-        <Object name_suffix="0" base_name="Gear" name_space="__global__" type="Geometry" pickable="0" visible="1" from="-10 0 0" at="-10 1 -1" up="0 1 0" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1" sourcetype="3" sourceparam="Gear 0.1 0.3 0.1 32 0.05 0"/>
+        <Object name_suffix="0" base_name="light_beacon" name_space="__global__" type="LightBeacon" pickable="0" visible="1" from="0 5 5" at="0 4 5" up="1 0 0" scale="1 1 1" cT="0 1 0" cR="0 0 0" do_cT="0" do_cR="0" cT_mode="1" at_dir="1" light="light"/>
       </Object>
     </Object>
   </Objects>
   <Rendering frustum_culling="1" occlusion_culling="0" two_sided="1"/>
   <Scripts>
-    <Script name_suffix="0" base_name="test" name_space="__script__" type="Python" mobile="">
-      <core>
-	import VR
-	
-	p = VR.Factory.Production()
-	
-	p.test()
-</core>
-      <trig type="none" dev="" state="Pressed" param="" key="0" name_suffix="0" base_name="trigger" name_space="__global__"/>
-    </Script>
     <Script name_suffix="0" base_name="udp_config" name_space="__script__" type="Python" mobile="">
       <core>
 	import socket, VR
@@ -39,9 +288,17 @@
 	import socket, VR, math
 
 	if not hasattr(VR, 'udpsock'):
-		VR.udpsock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM) # internet, UDP
-		VR.udpsock.bind( ('141.3.150.233', 6060) )
-		VR.udpsock.setblocking(0)
+		VR.ready = False
+		try:
+			VR.udpsock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM) # internet, UDP
+			VR.udpsock.bind( ('141.3.150.233', 6060) )
+			VR.udpsock.setblocking(0)
+			VR.getRoot().find('Default').setIdentity()
+			VR.ready = True
+		except:
+			pass
+			
+	if not VR.ready: return
 		
 	def updateWindow(a):
 		a *= math.pi/180
